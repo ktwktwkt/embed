@@ -2,7 +2,10 @@
   var val = 0; 
   
   window.onload = function(){
-    
+    setInterval(function(){
+      val box = document.getElementById("box");
+      box.value = new Date()
+    },1000);
   }
 </script>
 <input type="text" id="box" placeholder="입력" value="0" disabled>
