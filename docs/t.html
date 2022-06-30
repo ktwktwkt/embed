@@ -1,8 +1,16 @@
 <script>
+  var val = 0; 
+  
   window.onload = function(){
-    alert();  
+    var button = document.getElementById("button");
+    button.addEventListener("onclick",function(){
+      var box = document.getElementById("box");
+      box.value = ++val;
+    })
   }
 </script>
+<input type="button" id="button" value="클릭">
+<input type="text" id="box" placeholder="입력" value="0" disabled>
 
 
 
